@@ -44,7 +44,7 @@ mysql-connector-java-5.1.49.jar, [Download](https://drive.google.com/file/d/1yBP
 ```c =DriverManager.getConnection("jdbc:mysql:///lbms","root","password");``` 
 * Install and open Wamp Server and login as a root user with your MySQL server
 ### Execution
-* In the wamp server, type and check the following codes to create a required database for the project:
+* In the wamp server, copy the following codes to create a required database for the project:
 ```
 show databases;
 create database lbms;
@@ -62,7 +62,7 @@ create table student(student_id varchar(10), name varchar(25), father varchar(25
 alter table student add primary key (student_id);
 alter table account_srf add foreign key (student_id) references student(student_id) on delete cascade;
 ```
-## Author
+## Authors
 * Samya Bose [GitHub](https://github.com/samya-ravenXI),  E-mail: j.21.samyabose@gmail.com
 * Junaid Ahmed [GitHub](https://github.com/kap6174), E-mail i.26.junaidahmed@gmail.com
 * Ditipriya Seal [GitHub](https://github.com/Ditipriya5678), E-mail: ditipriyaseal@gmail.com
